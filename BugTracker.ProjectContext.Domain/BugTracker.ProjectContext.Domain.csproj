@@ -8,7 +8,12 @@
 
   <ItemGroup>
     <Folder Include="Persons\" />
-    <Folder Include="Projects\" />
+    <Folder Include="Projects\Exceptions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Framework.Core\Framework.Core.csproj" />
+    <ProjectReference Include="..\Framework.Domain\Framework.Domain.csproj" />
   </ItemGroup>
 
 </Project>
