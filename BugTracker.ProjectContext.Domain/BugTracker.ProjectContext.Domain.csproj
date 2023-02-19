@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Persons\" />
+    <Folder Include="Persons\Exceptions\" />
     <Folder Include="Projects\Exceptions\" />
   </ItemGroup>
 
@@ -17,6 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="ExceptionMessages\PersonExceptions.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PersonExceptions.resx</DependentUpon>
+    </Compile>
     <Compile Update="ExceptionMessages\ProjectExceptins.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -25,6 +30,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="ExceptionMessages\PersonExceptions.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PersonExceptions.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="ExceptionMessages\ProjectExceptins.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ProjectExceptins.Designer.cs</LastGenOutput>

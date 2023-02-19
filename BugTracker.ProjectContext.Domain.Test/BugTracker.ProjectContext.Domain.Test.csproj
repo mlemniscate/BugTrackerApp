@@ -18,4 +18,8 @@
     <ProjectReference Include="..\BugTracker.ProjectContext.Domain\BugTracker.ProjectContext.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Persons\" />
+  </ItemGroup>
+
 </Project>
