@@ -12,10 +12,15 @@ public class Project : BaseEntity
 
     public string Name { get; set; }
 
+    public string Description { get; set; }
+
     private void SetProjectName(string name)
     {
+        if (string.IsNullOrWhiteSpace(name))
+            throw new ProjectNameIsRequiredException();
         if (name.Length > 50)
             throw new ProjectNameTooLongException();
+
         Name = name;
     }
 }

@@ -3,7 +3,7 @@ using Framework.Domain;
 
 namespace BugTracker.ProjectContext.Domain.Projects.Exceptions;
 
-public class ProjectNameTooLongException : DomainException
+public class ProjectNameIsRequiredException : DomainException
 {
-    public override string Message => ProjectExceptins.ProjectNameTooLongException;
+    public override string Message => ProjectExceptins.ProjectNameIsRequiredException;
 }
